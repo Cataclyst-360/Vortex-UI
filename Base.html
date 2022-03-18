@@ -39,7 +39,11 @@
                 border: none;
                 background-color: transparent;
             }
-            button:hover {
+            #EXT:hover {
+                background-color: rgba(255, 255, 255, 0.3);
+                border-radius: 10px;
+            }
+            #Fcrn:hover {
                 background-color: rgba(0, 0, 0, 0.3);
                 border-radius: 10px;
             }
@@ -73,7 +77,7 @@
         </div>
         <!--The whole shebang-->
         <div id="app">
-            <button title="Go Light Mode" onclick="lightMode();" id="Fcrn"><img src="Images/Sun.png"></button>
+            <button title="Go Light Mode" onclick="lightMode();" id="Fcrn"><img src="Sun.png"></button>
             <!--The go to light mode button-->
             <script>
                 var elem = document.documentElement;
@@ -81,9 +85,10 @@
                         document.getElementById("Fcrn").style.display = "none";
                         document.getElementById("EXT").style.display = "block";
                         document.getElementById("app").style.backgroundColor = "rgba(0,0,0,0.3)"
+                        document.getElementById("")
                 }
             </script>
-            <button title="Go Dark Mode" onclick="darkMode();" id="EXT"><img src="Images/Moon.png"></button>
+            <button title="Go Dark Mode" onclick="darkMode();" id="EXT"><img src="Moon.png"></button>
             <!--The go to dark mode button-->
             <script>
                 function darkMode() {
